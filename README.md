@@ -1,5 +1,7 @@
 # Mock Google Cloud Spanner
 
+![Tests](https://github.com/arhea/go-mock-spanner/actions/workflows/main.yml/badge.svg?branch=main) ![goreportcard](https://goreportcard.com/badge/github.com/arhea/go-mock-spanner)
+
 Provides a mock of [Google Cloud Spanner](https://cloud.google.com/spanner?hl=en) using the official [Google Cloud Spanner Emulator](https://github.com/GoogleCloudPlatform/cloud-spanner-emulator).
 
 These mocks will automatically create a new emulator, wait for it to be available, then create a mock database. You will need to run your database migrations prior to performing your tests.
