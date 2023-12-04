@@ -3,7 +3,7 @@ module github.com/arhea/go-mock-spanner
 go 1.21.4
 
 require (
-	cloud.google.com/go/spanner v1.53.0
+	cloud.google.com/go/spanner v1.53.1
 	github.com/cenkalti/backoff/v4 v4.2.1
 	github.com/docker/go-connections v0.4.0
 	github.com/stretchr/testify v1.8.4
