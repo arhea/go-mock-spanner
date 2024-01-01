@@ -60,14 +60,10 @@ func (r *Client) Close(ctx context.Context) {
 	r.t.Helper()
 
 	r.client.Close()
-
-	if err := r.instanceAdminClient.Close(); err != nil {
-		r.t.Logf("error closing instance admin client: %v", err)
-	}
-
-	if err := r.dbAdminClient.Close(); err != nil {
-		r.t.Logf("error closing database admin client: %v", err)
-	}
+	// nolint:errcheck,gosec
+	r.instanceAdminClient.Close()
+	// nolint:errcheck,gosec
+	r.dbAdminClient.Close()
 
 	r.instance.Close(ctx)
 }
