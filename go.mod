@@ -5,7 +5,7 @@ go 1.21.4
 require (
 	cloud.google.com/go/spanner v1.54.0
 	github.com/cenkalti/backoff/v4 v4.2.1
-	github.com/docker/go-connections v0.4.0
+	github.com/docker/go-connections v0.5.0
 	github.com/stretchr/testify v1.8.4
 	github.com/testcontainers/testcontainers-go v0.27.0
 	google.golang.org/api v0.154.0
